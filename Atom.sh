@@ -20,7 +20,11 @@ apm install linter-reek
 
 apm install linter-shellcheck
 
+apm install language-docker
 apm install linter-docker
+
 apm install linter-js-yaml
 
 apm install linter-write-good
+
+apm install git-time-machine

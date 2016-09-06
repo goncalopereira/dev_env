@@ -49,3 +49,8 @@ Example:
   'alt-e': 'ror-refactor:extract-code'
 
 ```
+
+### Nice Theme
+```
+apm install atom-material-syntax
+```
