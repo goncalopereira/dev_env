@@ -1,10 +1,16 @@
 ### Gem install
 `bundle install`
-# Install Atom plugins
+# Install plugins
 
 ```
 chmod +x Atom.sh
 ./Atom.sh
+
+chmod +x NPM.sh
+./NPM.sh
+
+chmod +x Brew.sh
+./Brew.sh
 ```
 
 ### Modify ~/.atom/config.cson based on local file
@@ -32,5 +38,7 @@ Example:
 
 'atom-text-editor[data-grammar~="ruby"]':
   'alt-r': 'rubocop-auto-correct:current-file'
+'atom-text-editor[data-grammar~="ruby"]':
+  'alt-e': 'ror-refactor:extract-code'
 
 ```

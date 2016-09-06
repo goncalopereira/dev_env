@@ -1,0 +1,1 @@
+npm install jsonlint -g
