@@ -26,6 +26,7 @@ Example:
   rubyExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/ruby"
 "linter-foodcritic":
   executablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/foodcritic"
+  extraArgs: "-t correctness"
 "linter-reek":
   reekExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/reek"
 "linter-rubocop":
