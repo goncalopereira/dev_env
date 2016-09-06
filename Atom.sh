@@ -6,6 +6,7 @@ apm install linter
 apm install todo-show
 apm install linter-write-good
 apm install git-time-machine
+apm install merge-conflicts
 
 # Ruby
 apm install linter-ruby
