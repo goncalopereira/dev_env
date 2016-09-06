@@ -1,1 +1,2 @@
- brew install shellcheck
+#! /bin/bash
+brew install shellcheck

@@ -1,4 +1,5 @@
-apm install atom-beautify
+#! /bin/bash
+#apm install atom-beautify
 
 apm install todo-show
 apm install ror-refactor
@@ -17,3 +18,6 @@ apm install linter-foodcritic
 apm install linter-reek
 
 apm install linter-shellcheck
+
+apm install linter-docker
+apm install linter-js-yaml

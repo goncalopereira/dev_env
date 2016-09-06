@@ -1,5 +1,5 @@
 ignore %r{^ignored/path/}, /public/
-filter / \.txt$/, /.*\.zip /
+filter /\.txt$/, /.*\.zip /
 
 group :unit do
   guard :rspec, :cmd => 'bundle exec rspec --fail-fast' do
