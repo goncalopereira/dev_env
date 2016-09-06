@@ -7,6 +7,7 @@ apm install todo-show
 apm install linter-write-good
 apm install git-time-machine
 apm install merge-conflicts
+apm install atom-fuzzy-grep
 
 # Ruby
 apm install linter-ruby
