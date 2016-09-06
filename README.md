@@ -13,7 +13,7 @@ chmod +x Brew.sh
 ./Brew.sh
 ```
 
-### Modify ~/.atom/config.cson based on local file
+### Change ~/.atom/config.cson based on local file
 
 Use `$ rbenv which $gem`
 To find gem location
@@ -21,19 +21,26 @@ To find gem location
 Example:
 
 ```
+"linter-erb":
+  erbExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/erb"
+  rubyExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/ruby"
 "linter-foodcritic":
   executablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/foodcritic"
+"linter-reek":
+  reekExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/reek"
 "linter-rubocop":
   command: "/usr/local/opt/rbenv/versions/2.3.1/bin/rubocop"
 "linter-ruby":
+  ignoredExtensions: [
+    "md"
+  ]
   rubyExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/ruby"
+"linter-shellcheck": {}
 "rubocop-auto-correct":
   rubocopCommandPath: "/usr/local/opt/rbenv/versions/2.3.1/bin/rubocop"
-'linter-reek':
-  reekExecutablePath: "/usr/local/opt/rbenv/versions/2.3.1/bin/reek"
 ```
 
-### Modify ~/.atom/keymap.cson based on local file
+### Change ~/.atom/keymap.cson based on local file
 ```
 
 'atom-text-editor[data-grammar~="ruby"]':
