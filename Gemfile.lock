@@ -353,6 +353,7 @@ DEPENDENCIES
   guard
   guard-rspec
   inspec
+  pry
   rspec
   rubocop
   rubycritic
