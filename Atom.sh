@@ -2,11 +2,14 @@
 #apm install atom-beautify
 apm install linter
 
+#Git
+apm install git-time-machine
+apm install merge-conflicts
+apm install git-plus
+
 # Extra
 apm install todo-show
 apm install linter-write-good
-apm install git-time-machine
-apm install merge-conflicts
 apm install atom-fuzzy-grep
 
 # Ruby
