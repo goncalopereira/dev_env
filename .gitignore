@@ -1,3 +1,5 @@
+# https://raw.githubusercontent.com/github/gitignore/master/Ruby.gitignore
+
 *.gem
 *.rbc
 /.config
