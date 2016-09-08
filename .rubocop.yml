@@ -1,5 +1,4 @@
 # https://raw.githubusercontent.com/bbatsov/rubocop/master/config/default.yml
-
 # This is the default configuration file. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
 
@@ -397,9 +396,6 @@ Style/Copyright:
   Notice: '^Copyright (\(c\) )?2[0-9]{3} .+'
   AutocorrectNotice: ''
 
-Style/DocumentationMethod:
-  RequireForNonPublicMethods: false
-
 # Multi-line method chaining should be done with leading dots.
 Style/DotPosition:
   EnforcedStyle: leading
@@ -537,14 +533,9 @@ Style/GuardClause:
 Style/HashSyntax:
   EnforcedStyle: ruby19
   SupportedStyles:
-    # checks for 1.9 syntax (e.g. {a: 1}) for all symbol keys
     - ruby19
-    # checks for hash rocket syntax for all hashes
-    - hash_rockets
-    # forbids mixed key syntaxes (e.g. {a: 1, :b => 2})
-    - no_mixed_keys
-    # enforces both ruby19 and no_mixed_keys styles
     - ruby19_no_mixed_keys
+    - hash_rockets
   # Force hashes that have a symbol value to use hash rockets
   UseHashRocketsWithSymbolValues: false
   # Do not suggest { a?: 1 } over { :a? => 1 } in ruby19 style
@@ -658,10 +649,6 @@ Style/NumericPredicate:
   SupportedStyles:
     - predicate
     - comparison
-  # Exclude RSpec specs because assertions like `expect(1).to be > 0` cause
-  # false positives.
-  Exclude:
-    - 'spec/**/*'
 
 Style/MethodDefParentheses:
   EnforcedStyle: require_parentheses
@@ -1055,13 +1042,6 @@ Style/VariableName:
     - snake_case
     - camelCase
 
-Style/VariableNumber:
-  EnforcedStyle: normalcase
-  SupportedStyles:
-    - snake_case
-    - normalcase
-    - non_integer
-
 Style/WhileUntilModifier:
   MaxLineLength: 80
 
@@ -1233,10 +1213,6 @@ Rails/HasAndBelongsToMany:
   Include:
     - app/models/**/*.rb
 
-Rails/NotNullColumn:
-  Include:
-    - db/migrate/*.rb
-
 Rails/Output:
   Include:
     - app/**/*.rb
@@ -1253,13 +1229,6 @@ Rails/RequestReferer:
   SupportedStyles:
     - referer
     - referrer
-
-Rails/SafeNavigation:
-  # This will convert usages of `try` to use safe navigation as well as `try!`.
-  # `try` and `try!` work slighly differently. `try!` and safe navigation will
-  # both raise a `NoMethodError` if the receiver of the method call does not
-  # implement the intended method. `try` will not raise an exception for this.
-  ConvertTry: false
 
 Rails/ScopeArgs:
   Include:
