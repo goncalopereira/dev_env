@@ -126,7 +126,7 @@ GEM
       ruby_parser (~> 3.9)
     fauxhai (5.6.0)
       net-ssh
-    ffi (1.9.23)
+    ffi (1.11.3)
     ffi-yajl (2.3.1)
       libyajl2 (~> 1.2)
     flay (2.10.0)
